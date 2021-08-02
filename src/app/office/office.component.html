@@ -1,0 +1,19 @@
+<p>office works!</p>
+<h3>
+Welcome {{name}}!! <!--string interpolation-->
+</h3>
+How are you {{name}}?
+<br><br>
+Is this your {{phoneno}}?
+<br><br>
+<div [style]="example">
+    Property Binding
+</div>
+<img [src]="prac" alt="practiceimage" [height]="a"/>
+<p [style]="(phoneno>1000)?appearance1:appearance2">
+    Hahahah
+</p>
+<label>EventBinding</label>
+<input type="text" [value]="name"/>
+<input type="button" id="bt1" value="click" (click)="changeName()"/>
+

@@ -1,0 +1,20 @@
+<p *ngIf='ab; else bc'>Strucdiv:tag of if</p>
+<ng-template #bc>
+<p>Strucdiv:tag of else</p>
+</ng-template>
+<hr>
+<div *ngIf="ab then iblock else eblock"></div>
+<ng-template #iblock>
+    <div>if block</div>
+</ng-template>
+<ng-template #eblock>
+    <div>Else Block</div>
+</ng-template>
+<hr>
+<div *ngIf='st;else eb'>Div tag of IF </div>
+<ng-template  #eb>
+    <div *ngIf="st1; else innerb">Div tag of inner if </div>
+    <ng-template #innerb>
+    <p>This is inner else</p>
+    </ng-template>
+</ng-template>

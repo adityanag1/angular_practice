@@ -1,0 +1,37 @@
+<p>fordemo works!</p>
+<ul>
+    <li  *ngFor="let i of numbers;index as e">{{i}}:{{e}}</li>
+</ul>
+
+{{tdate | date:'d/M/y'}}<br>
+{{tdate | date:'shortDate'}}
+{{tdate | date:'shortTime'}}<br>
+{{3.72165 | number:'5.4'}}
+<br><br>
+{{colors | slice: 3 : 5}}
+<hr>
+<table border="1px">
+    <tr style="background-color: aqua;">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th> 
+    </tr>
+    <tr>
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.salary}}</td>
+    </tr>
+</table>
+<br><br>
+<table border="1px">
+    <tr style="background-color: aqua;">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th> 
+    </tr>
+    <tr *ngFor="let emp of employees;">
+        <td >{{emp.id}}</td>
+        <td>{{emp.name|uppercase}}</td>
+        <td>{{emp.salary}}</td>
+    </tr>
+</table>

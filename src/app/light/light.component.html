@@ -1,0 +1,19 @@
+<p>light works!</p>
+
+<img [src]="lighton" height="20%" width="20%" alt="LightOn"/>
+<!--<img [src]="lightofff" height="20%" width="20%" alt="LightOff"/>-->
+<!-- <br><br>
+<input type="button" [disabled]="click" [style]="task2" [src]="lightofff"  value='{{value}}' id="bt1" (click)="lightoff()"/>
+<br><br>
+<input type="button"  value="Change Image" id="bt2" (click)="changeimg()"/>
+ -->    
+ <br><br>
+ <input type="button"  value="Change Image" id="bt2" (click)="changeimg()"/>
+ <p *ngIf='newimg'>
+    <input type="button" [disabled]='imgclick' [style]="task2" [src]="lightofff"  value='{{value}}' id="bt1" (click)="lightoff()"/>
+</p>
+
+<!--<button><img [src]="newimg" [src]="lightofff" id="bt1" (click)="lightoff()">{{value}}</button>-->
+<!--
+<input type="button" [id]="bt2" value="Turn On"/>
+-->
