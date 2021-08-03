@@ -13,6 +13,7 @@ import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
 import { FordemoComponent } from './fordemo/fordemo.component';
 import { LikedislikeComponent } from './likedislike/likedislike.component';
 import { MenuconfigComponent } from './menuconfig/menuconfig.component';
+import { TodoComponent } from './todo/todo.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MenuconfigComponent } from './menuconfig/menuconfig.component';
     SwitchdemoComponent,
     FordemoComponent,
     LikedislikeComponent,
-    MenuconfigComponent
+    MenuconfigComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
